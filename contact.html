@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel and Tourism</title>
+  <style>
+    .Container {
+      width: 500px;
+      margin: 0 auto;
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .row {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+      /* Change to the color you prefer */
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline;
+    }
+  </style>
+
+
+
+
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="navbar">
+
+      <ul>
+        <li><a href="#Index">Index</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#Discount">Discount</a></li>
+        <li><a href="#Contact">Contact</a></li>
+
+      </ul>
+
+
+    </div>
+    </div>
+
+
+    </head>
+
+    <body>
+      <div class="Container">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="post">
+          <div class="row">
+            <label class="required" for="name">Name:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+            <span id="name_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="email">Email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label for="phone">Phone Number:</label><br />
+            <input id="phone" class="input" name="phone" type="text" value="" size="30" /><br />
+          </div>
+          <div class="row">
+            <label class="required" for="travel_dates">Travel Dates:</label><br />
+            <input id="travel_dates" class="input" name="travel_dates" type="text" value="" size="30" /><br />
+            <span id="travel_dates_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label class="required" for="destination">Destination:</label><br />
+            <input id="destination" class="input" name="destination" type="text" value="" size="30" /><br />
+            <span id="destination_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <label for="budget">Budget:</label><br />
+            <input id="budget" class="input" name="budget" type="text" value="" size="30" /><br />
+          </div>
+          <div class="row">
+            <label class="required" for="message">Message:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+          </div>
+          <div class="row">
+            <input id="submit_button" type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+  </div>
+  <div class="footer">
+    <a href="#">Copyright</a>
+    <a href="#">Terms and Conditions</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Cookies</a>
+    <a href="#">Complaints</a>
+  </div>
+
+
+</body>
+
+</html>
